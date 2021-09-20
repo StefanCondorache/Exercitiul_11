@@ -1,9 +1,9 @@
 n=int(input('numarul de elemente: '))
 if n<10 and n>0:
     list1=list(map(lambda element:int(input('element:')),range(n)))
-    print('a) afiseaza pe ecran componentele tabloului la un interval de 5 pozitii;','\n  ',list1[:5])
+    print('a) afiseaza pe ecran componentele tabloului la un interval de 5 pozitii;','\n  ',*list1[:5])
     list2=list1[::-1]
-    print('b) afiseaza pe ecran numerele in ordinea inversa a introducerii in calculator;','\n  ',list2)
+    print('b) afiseaza pe ecran numerele in ordinea inversa a introducerii in calculator;','\n  ',*list2)
     list2=list1.copy()
     list2.sort(reverse=True)
     print('c) sorteaza componentele tabloului in ordine descrescatoare;','\n  ',list2)
