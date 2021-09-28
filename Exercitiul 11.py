@@ -40,6 +40,6 @@ if n<10 and n>0:
     print('  ',list11)
     list12=[]
     for i in list1:
-        if len([j for j in range(1,i+1) if i%j==0])>=4:
+        if len([j for j in range(1,i+1) if i%j==0])<=4:
             list12.append(i)
     print('o) creeaza un tablou nou, format doar din acele componente ale tabloului introdus de la tastatura care au cel mult patru divizori.','\n  ',list12)
